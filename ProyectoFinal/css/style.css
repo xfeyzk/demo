@@ -1,0 +1,354 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16/05/2018, 12:52:07 PM
+    Author     : xfeyz
+*/
+*{
+    box-sizing: border-box;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 2px;
+    
+    /*border: solid 1px red*/
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.container{
+    width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jumbotron{
+    background: #efefef;
+    color: black;
+    padding: 90px 0;
+}
+.jumbotron titulo-blog{
+    font-size: 80px;
+}
+
+
+
+@media (min-width: 992px){
+   .cajitas{
+    position: relative;
+    margin-top: -100px;
+}
+}
+
+
+header nav ul li a:hover, .active{
+    color: #00bc1f;
+}
+.fixed{
+    
+    width: 100%;
+    top: 0px;
+    background-color: white;
+    
+   
+}
+.fondo{
+    background-image: url(../images/bg1.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.fondo{
+    color: white;
+    margin-top: 50px;
+}
+.fondo h1 span{
+    color: #00bc1f;
+}
+.fondo h1{
+    margin-top: 200px;
+    font-size: 250%;
+    margin-bottom: 0px;
+}
+.boton{
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    background-color: #00bc1f;
+    border-radius: 6px;
+}
+.cajaMediana{
+    width: 400px;
+}
+.circulo{
+    width: 150px;
+    height: 150px;
+    background-color: #00bc1f;
+    border-radius: 50%;
+    margin: 60px auto 30px auto;
+    color: white;
+    font-size: 250%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    font-family: sans-serif;
+    color: #333333;
+}
+.service h2{
+    color: #00bc1f;
+    font-weight: 200;
+    font-size: 120%;
+    text-transform: uppercase;
+}
+.about{
+   padding-top: 20px;
+    margin-top: 60px;
+}
+
+.about p{
+    font-size: 15px;
+}
+#pie{
+     background-color: #efefef;
+     padding-top: 20px;
+     
+}
+.about img{
+    width: 100%;
+    border-radius: 5px;
+}
+.pie img{
+width: 80%;
+}
+
+.about div{
+    padding: 15px;
+}
+
+#pie div{
+    padding: 5px;
+}
+
+
+
+.news {
+    padding:50px;
+}
+
+.news h2 {
+    font-size:20px;
+    font-weight:600;
+    margin-bottom:30px;
+}
+
+.news img {
+    margin-top:30px;
+    border-radius:5px;
+}
+.img{
+    width: 100%;
+    height: auto;
+}
+h2.centrar{
+    text-align: center;
+}
+
+div img.iphone{
+    width: 100%;
+    border-radius: 5px;
+}
+
+div.fondo2{
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+    background-image: URL(../images/partner_bg.png);
+    background-position: center;
+    padding-bottom: 100px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+div.textP{
+    text-align: center; 
+}
+
+h3.topt{
+    margin-top: 50px;
+    font-size: 250%;
+    margin-bottom: 0px;
+}
+
+img.patrocinador{
+    width: 130px;
+    margin-bottom: 0px;
+}
+
+div i.fa-phone-square{
+    font-size: 50px;
+}
+.fondofoot{
+    background-color: lightgrey;
+   
+}
+
+#pie h2{
+    text-align: left;
+    font-size: 20px;
+}
+
+.fixed h1:hover{
+    transform: translate(30px,0px);
+    transition: all 1s;
+}
+.fixed h1{
+    transition: all 1s;
+}
+.circulo:hover i{
+    transform: rotate(360deg);
+    transition: all 1s;
+}
+.circulo i{
+    transition: all 1s;
+}
+.about img:hover{
+    transform: scale(1.1,1.1);
+    transition: 0.5s;
+}
+.about img{
+    transition: all 1s;
+}
+.efecto:hover .fondocaja{
+    visibility: visible;
+    transition: all 1s;
+    height: 162px;
+}
+.efecto:hover .efectoTexto{
+    transform: rotate(360deg);
+    font-size: 26px;
+    transition: all .8s;
+}
+.efecto .efectoTexto{
+    transition: all .4s;
+    font-size: 0px;
+}
+.fondocaja{
+    border-radius: 5px;
+    transition: all 1s;
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    width: 299px;
+    height: 0px;
+    color: white;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+.mVisible{
+    display: block;
+}
+@media screen and (max-width: 1023px) {
+    .container{
+        width: 95%;
+    }
+    .col-9{
+        width: 50%;
+    }
+    .fondo h1{
+        margin-top: 160px;
+    }
+    .fondo{
+        max-height: 400px;
+        background-size: auto;
+    }
+    header nav ul li{
+        display: block;
+        border: 1px solid #00bc1f;
+    }
+    header nav ul li{
+        border-top: none;
+    }
+    header nav ul li:nth-child(1){
+        border: 1px solid #00bc1f;
+    }
+    header nav ul{
+        text-align: center;
+        padding: 0px;
+        
+    }
+    header nav{
+        display: none;
+    }
+    .col-9{
+        width: 50%;
+    }
+    .menu{
+        text-align: right;
+    }
+}
+@media screen and (max-width: 500px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+ .slider {
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+        
+}
+
+.slider img {
+	width: 100%;
+        height: 400px;
+}
+.cajaimagen{
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6px;
+    background-color: lightblue;
+    background-size: 100%;
+    margin-top: 150px;
+}
+
+.cajaimagen img{
+    width: 100%;
+    border-radius: 5px;
+}
+}

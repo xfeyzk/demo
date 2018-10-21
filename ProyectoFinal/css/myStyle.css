@@ -1,0 +1,348 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2/07/2018, 09:39:12 AM
+    Author     : xfeyz
+*/
+.circulo:hover i{
+    transform: scale(1.2,1.2);
+    transition: all 0.1s;
+    color: #ff3333;
+}
+.circulo i{
+    transition: all 0.1s;
+    color: white;
+}
+.navegacion:hover span{
+    transform: scale(1.4,1.4);
+    transition: all 0.3s;
+}
+.navegacion span{
+    transition: all 0.3s;
+}
+.dozoom img:hover{
+    transform: scale(1.05,1.05);
+    transition: 0.5s;
+}
+.dozoom img{
+    transition: all 0.5s;
+}
+div img.miniaturas{
+    width: 100%;
+    border-radius: 0px;
+}
+div a.enlace{
+    text-decoration: none;
+    color: white;
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.tarjeta{
+    height: 480px;
+    background-color: white; 
+    color: black; 
+    padding: 0px;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: left;
+}
+div.tarjeta h4{
+    padding: 20px; 
+    padding-bottom: 0px;
+}
+div.tarjeta p{
+    padding: 20px; 
+    padding-bottom: 5px;
+}
+.iconoti{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 60px 0px 10px 0px;
+    color: #cccccc;
+    font-size: 250%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconoti:hover i{
+    color: #ff0000;
+    transition: all 0.4s;
+}
+.iconoti i{
+    transition: all 0.4s;
+}
+.secnoti{
+    background-color: white;
+    color: black;
+    margin: 60px 0px 0px 0px;
+    border-radius: 8px;
+    border: solid 2px;
+    border-color:#999999;
+}
+div.secnoti h4:hover{
+    color: #ff0000;
+    transition: all 0.2s;
+}
+div.secnoti h4{
+    transition: all 0.2s;
+}
+div.secnoti a.noticia{
+    text-decoration: none;
+    color: black;
+}
+.image:hover {
+    border: solid 4px;
+    border-color: #ff0000;
+    transition: all 0.4s;
+}
+.image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    background-position: center;
+    background-size: cover;
+    margin: 60px 0px 10px 0px;
+    border: solid 4px;
+    border-color: white;
+    transition: all 0.4s;
+}
+h2.linearoja:after {
+    display: block;
+    content: "";
+    border-bottom: 3px solid #C51111;
+    margin-top: -12px;
+    margin-left: 135px;
+}
+h2.prueba{
+    font: normal 30px 'Roboto Condensed';
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+h2.redline:after {
+    display: block;
+    content: "";
+    border-bottom: 3px solid #C51111;
+    margin-top: -12px;
+    margin-left: 270px;
+}
+/*FIN DE MI ESTILO*/
+
+/* ///// inputs /////*/
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+    font-size: 0.75em;
+    color: #999;
+    top: -5px;
+    -webkit-transition: all 0.225s ease;
+    transition: all 0.225s ease;
+}
+
+.styled-input {
+    float: left;
+    width: 293px;
+    margin: 1rem 0;
+    position: relative;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px){
+    .styled-input {
+        width:100%;
+    }
+}
+
+.styled-input label {
+    color: #999;
+    padding: 1.3rem 30px 1rem 30px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+}
+
+.styled-input.wide { 
+    width: 650px;
+    max-width: 100%;
+}
+
+input,
+textarea {
+    padding: 30px;
+    border: 0;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #2d2d2d;
+    color: white;
+    border-radius: 4px;
+}
+
+input:focus,
+textarea:focus { outline: 0; }
+
+input:focus ~ span,
+textarea:focus ~ span {
+    width: 100%;
+    -webkit-transition: all 0.075s ease;
+    transition: all 0.075s ease;
+}
+
+textarea {
+    width: 100%;
+    min-height: 15em;
+}
+
+.input-container {
+    width: 650px;
+    max-width: 100%;
+    margin: 20px auto 25px auto;
+}
+
+.submit-btn {
+    float: right;
+    padding: 7px 35px;
+    border-radius: 60px;
+    display: inline-block;
+    background-color: #ff3333;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06),
+              0 2px 10px 0 rgba(0,0,0,0.07);
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(1px);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
+              0 1px 1px 0 rgba(0,0,0,0.09);
+}
+
+@media (max-width: 768px) {
+    .submit-btn {
+        width:100%;
+        float: none;
+        text-align:center;
+    }
+}
+
+input[type=checkbox] + label {
+  color: #ccc;
+  font-style: italic;
+} 
+
+input[type=checkbox]:checked + label {
+  color: #f00;
+  font-style: normal;
+}
+/*FOOTER*/
+
+.search-text{
+	margin-top:50px;
+	background-color: #272d33;
+	padding-top:60px;
+	padding-bottom:60px;
+}
+	
+.search-text .input-search{
+	height:45px;
+	width:40%;
+	padding-left:20px;
+    color:#333;
+} 
+
+.search-text .btn-search{
+    background: #da3e44;
+    font-family:Roboto;
+    border:none;
+	color:#FFF;
+	height: 45px;
+    width: 80px;
+}
+
+.search-text h4{
+    color: #FFF;
+    font-weight: 700;
+}
+
+footer{
+     background-color: #33383c;
+     padding:30px 0px;
+}	       
+
+.logo{
+    color:#FFF;
+    font-weight:700;
+    font-size:30px;
+}
+
+.address span , .menu span{
+   color: #FFF; 
+   font-weight: bold; 
+   border-bottom: 1px solid #c7c7c7; 
+   padding:10px 0px;
+   display: block;
+   text-transform: uppercase;
+   font-size: 16px;
+   letter-spacing: 3px;
+}
+ 
+.address li a , .menu li a{
+    color:#FFF;
+    letter-spacing: 3px;
+    text-decoration:none;
+    font-size:14px;
+}
+
+.address li, .menu li{
+    margin:20px 0px;
+    list-style: none;
+}
+
+.address li a:hover , .menu li a:hover{
+    color: #da3e44;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.address .fa{
+    color: #da3e44;
+    margin-right: 10px;
+    font-size:18px;
+}
+
+.infoNoticia{
+    margin: 0 auto;
+    text-align: center;
+    width: 980px;
+    height: 300px;
+}
+
+.textoNoticia{
+    color: white;
+    margin: 0 auto;
+    text-align: justify;
+    width: 980px;
+}
+
+.mediosNoticia{
+    color: white;
+    margin: 0 auto;
+    text-align: justify;
+    width: 980px;
+    height: auto;
+}
+
+
